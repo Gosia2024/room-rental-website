@@ -6,9 +6,9 @@ export default function Searchbar(){
          <input 
          placeholder='Szukaj...' 
         style={styles}
-        className ="input"
+        className =""
         />
-        <button className="button">Szukaj</button>
+        <button className="btn btn-primary">Szukaj</button>
        </>
 
     )
