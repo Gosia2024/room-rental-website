@@ -1,3 +1,5 @@
+import { Button } from 'react-bootstrap';
+
 export default function Searchbar(){
     const styles = { borderRadius: 8, marginRight: 5}
     return (
@@ -8,7 +10,8 @@ export default function Searchbar(){
         style={styles}
         className ="form-control"
         />
-        <button className="btn btn-primary">Szukaj</button>
+       <button type="button" class="btn btn-primary">Szukaj</button>
+
        </div>
 
     )
