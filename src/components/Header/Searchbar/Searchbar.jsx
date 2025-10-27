@@ -1,12 +1,14 @@
 export default function Searchbar(){
+    const styles = { borderRadius: 8}
     return (
 
         <>
          <input 
          placeholder='Szukaj...' 
-         style={{borderRadius: 8}}
+        style={styles}
+        className ="input"
         />
-        <button>Szukaj</button>
+        <button className="button">Szukaj</button>
        </>
 
     )

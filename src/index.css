@@ -1,0 +1,14 @@
+body{
+    font-family: Aral, sanf-serif;
+}
+
+.input{
+    border: 1px solid #000
+}
+
+.button{
+    border-radius: 8px;
+    border: 1px solid blue;
+    background-color: aqua;
+    color: red;
+}

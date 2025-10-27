@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import Searchbar from './Searbar/Searchbar.jsx'
+import Searchbar from './Searchbar/Searchbar.jsx'
 
 export default function Header() {
 
