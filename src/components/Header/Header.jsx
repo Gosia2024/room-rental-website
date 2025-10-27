@@ -8,7 +8,8 @@ export default function Header() {
       
       <div>
         <input placeholder='Szukaj...' 
-        className={styles.input} />
+        style={{borderRadius: 8}}
+        />
         <button>Szukaj</button>
       </div>
     </div>
