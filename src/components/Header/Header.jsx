@@ -1,12 +1,17 @@
-import './Header.css'
+import styles from './Header.module.css'
 
 export default function Header() {
- 
 
   return (
-    <>
-     <div className="header">Header</div>
-    </>
+    
+     <div className={styles.header}>
+      
+      <div>
+        <input placeholder='Szukaj...' 
+        className={styles.input} />
+        <button>Szukaj</button>
+      </div>
+    </div>
   )
 }
 
