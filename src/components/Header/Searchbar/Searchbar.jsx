@@ -10,7 +10,7 @@ export default function Searchbar(){
         style={styles}
         className ="form-control"
         />
-       <button type="button" class="btn btn-primary">Szukaj</button>
+       <button type="button" className="btn btn-primary">Szukaj</button>
 
        </div>
 
