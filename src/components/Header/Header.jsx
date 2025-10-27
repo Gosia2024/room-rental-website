@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import Searchbar from './Searbar/Searchbar.jsx'
 
 export default function Header() {
 
@@ -7,10 +8,7 @@ export default function Header() {
      <div className={styles.header}>
       
       <div>
-        <input placeholder='Szukaj...' 
-        style={{borderRadius: 8}}
-        />
-        <button>Szukaj</button>
+       <Searchbar />
       </div>
     </div>
   )
