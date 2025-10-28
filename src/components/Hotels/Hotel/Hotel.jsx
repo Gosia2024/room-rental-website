@@ -1,13 +1,15 @@
 import styles from "./Hotel.module.css";
 import hotelImg from "../../../assets/images/foto_1.png";
 
-export default function Hotel() {
+export default function Hotel(props) {
+  const {name, city, rating, description, image } = props
+  
   return (
     <div className={`${styles.hotel} row`}>
       {/* LEFT COLUMN: IMAGE */}
       <div className="col-4">
         <img
-          src={hotelImg}
+          src={image}
           alt="pensjonat"
           className="img-fluid img-thumbnail"
         />
@@ -18,17 +20,17 @@ export default function Hotel() {
         {/* first row: Pensjonat + Ocena */}
         <div className="row align-items-start">
           <div className="col-6">
-            <p><b>Pensjonat</b></p>
+            <p><b>{name}</b></p>
           </div>
           <div className="col-6 text-end">
-            <p><b>Ocena: 8.5</b></p>
+            <p><b>{rating}</b></p>
           </div>
         </div>
 
         {/* second row: Warszawa + 233 */}
         <div className="row align-items-start mb-2">
           <div className="col-6">
-            <span className="badge text-bg-light">Warszawa</span>
+            <span className="badge text-bg-light">{city}</span>
           </div>
           <div className="col-6 text-end">
             <span className="badge text-bg-secondary">233</span>
@@ -36,7 +38,7 @@ export default function Hotel() {
         </div>
 
         {/* description */}
-        <p className={styles.description}>
+        <p className={styles.description}>{description}
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
           porro illum veritatis molestiae nemo tenetur veniam, soluta impedit
           placeat fuga saepe ex beatae alias maxime nobis explicabo praesentium

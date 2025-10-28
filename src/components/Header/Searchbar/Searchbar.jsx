@@ -10,7 +10,7 @@ export default function Searchbar(){
      }
  
 
-     const onKeyDown = e) => {
+     const onKeyDown = (e) => {
             if (e.code === 'Enter'){
                 onSearch()
             }
